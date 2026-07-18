@@ -103,6 +103,11 @@ a:hover {
   color: var(--accent);
 }
 
+.site-nav a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .cv-button {
   background: var(--accent);
   color: #fff !important;
@@ -236,6 +241,45 @@ section {
 
 #contact p {
   margin: 0 0 8px;
+}
+
+/* Home page */
+
+.hero p {
+  max-width: 640px;
+}
+
+.hero .tagline {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin: 0 0 24px;
+}
+
+.home-links {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.home-links a {
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: var(--text);
+}
+
+.home-links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Placeholder / in-progress pages */
+
+.placeholder-note {
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 /* Footer */
