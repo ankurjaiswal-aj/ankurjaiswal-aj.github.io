@@ -63,12 +63,12 @@ Generative AI and knowledge work; business value of IT; continuous feature innov
 <div class="timeline">
 
   <div class="timeline-item">
-    <div class="timeline-org">University of Calcutta, Kolkata</div>
+    <div class="timeline-org">University of Calcutta</div>
     <div class="timeline-role">M.Sc., Economics <span class="timeline-year">2018</span></div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-org">University of Calcutta, Kolkata</div>
+    <div class="timeline-org">University of Calcutta</div>
     <div class="timeline-role">B.Sc., Economics (Honours) <span class="timeline-year">2016</span></div>
   </div>
 
