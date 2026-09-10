@@ -333,3 +333,5 @@ html[data-theme="dark"] .archive .archive__item-award { color: #e0c260; }
   color: var(--global-link-color-hover);
   text-decoration: underline;
 }
+
+.archive .archive__item-award + .archive__item-award { margin-left: 0.4em; }

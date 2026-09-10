@@ -64,7 +64,10 @@
         {% endif %}
 
     {% if post.award %}
-      <p class="archive__item-awardline"><span class="archive__item-award">{{ post.award }}</span></p>
+      <p class="archive__item-awardline">
+        {% if post.award.first %}{% for a in post.award %}<span class="archive__item-award">{{ a }}</span>{% endfor %}
+        {% else %}<span class="archive__item-award">{{ post.award }}</span>{% endif %}
+      </p>
     {% endif %}
 
     {% comment %}On Research (unpublished categories) the body IS the abstract,
