@@ -1,0 +1,335 @@
+/* ==========================================================================
+   BASE TYPE SCALE
+   The theme sets html font-size to 16px, rising to 18px at the $medium
+   breakpoint (768px). Everything else is em-based off that, so lowering
+   these two numbers scales the whole site down proportionally.
+   ========================================================================== */
+html { font-size: 15px; }
+@media (min-width: 768px) {
+  html { font-size: 16px; }
+}
+
+/* ==========================================================================
+   UT AUSTIN PALETTE
+   Burnt orange #BF5700 is UT Austin's official primary.
+   Verified contrast: #BF5700 on white = 4.59:1 (WCAG AA).
+   On the dark theme it drops to 2.03:1, so dark mode uses the lighter
+   tint #FFA05C = 4.62:1 instead.
+   ========================================================================== */
+
+:root {
+  --ut-burnt-orange                   : #bf5700;
+  --ut-burnt-orange-dark              : #8c3f00;
+  --ut-charcoal                       : #333f48;
+
+  --global-base-color                 : #bf5700;
+  --global-link-color                 : #bf5700;
+  --global-link-color-hover           : #8c3f00;
+  --global-link-color-visited         : #a54a00;
+  --global-masthead-link-color        : #bf5700;
+  --global-masthead-link-color-hover  : #8c3f00;
+}
+
+html[data-theme="dark"] {
+  --global-base-color                 : #ffa05c;
+  --global-link-color                 : #ffa05c;
+  --global-link-color-hover           : #ffc09a;
+  --global-link-color-visited         : #e8a274;
+  --global-masthead-link-color        : #ffa05c;
+  --global-masthead-link-color-hover  : #ffc09a;
+}
+
+/* ==========================================================================
+   Custom overrides - listing pages (Research, Publications, Talks, Teaching)
+   NOTE: the `archive` layout wraps content in .archive, not .page__content,
+   so both are targeted here.
+   ========================================================================== */
+
+/* Section headings: clearly highlighted bands */
+.archive > h2,
+.archive .compact > h2,
+.page__content > h2 {
+  margin: 2.2em 0 0.9em !important;
+  padding: 0.45em 0.85em !important;
+  font-size: 0.8em !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.09em !important;
+  color: var(--global-base-color) !important;
+  background: rgba(127, 127, 127, 0.12);
+  border-left: 4px solid var(--global-base-color);
+  border-bottom: 0 !important;
+  border-radius: 0 4px 4px 0;
+}
+
+.archive > h2:first-of-type,
+.archive .compact > h2:first-of-type,
+.page__content > h2:first-of-type { margin-top: 0.8em !important; }
+
+/* Redundant rule the theme prints under each heading */
+.archive > h2 + hr,
+.archive .compact > h2 + hr,
+.page__content > h2 + hr { display: none; }
+
+/* Entries: compact, hairline separated */
+.archive .list__item {
+  margin-bottom: 0.55em;
+  padding-bottom: 0.55em;
+  border-bottom: 1px solid var(--global-border-color);
+}
+.archive .list__item:last-child { border-bottom: 0; }
+
+.archive .archive__item { margin-bottom: 0; }
+
+.archive .archive__item-title {
+  margin: 0 0 0.15em !important;
+  padding-bottom: 0 !important;
+  font-size: 1em !important;
+  line-height: 1.35 !important;
+  border-bottom: 0 !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  background: none !important;
+}
+
+.archive .archive__item-venue {
+  margin: 0.1em 0;
+  font-size: 0.88em;
+  opacity: 0.85;
+}
+
+.archive .archive__item-excerpt {
+  margin: 0.2em 0 0;
+  font-size: 0.87em;
+  opacity: 0.8;
+}
+.archive .archive__item-excerpt p { margin: 0; }
+
+/* Authors line */
+.archive .archive__item-authors {
+  margin: 0.1em 0 0.15em;
+  font-size: 0.88em;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Abstract - always visible, small */
+.archive .archive__item-abstract {
+  margin: 0.4em 0 0.1em;
+}
+.archive .archive__item-abstract-label {
+  display: block;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.55;
+  margin-bottom: 0.15em;
+}
+.archive .archive__item-abstract-body {
+  font-size: 0.76em;
+  line-height: 1.55;
+  opacity: 0.82;
+  max-width: 48em;
+}
+.archive .archive__item-abstract-body p { margin: 0 0 0.45em; }
+.archive .archive__item-abstract-body p:last-child { margin-bottom: 0; }
+
+/* Award badge - visible but restrained */
+.archive .archive__item-awardline { margin: 0.3em 0 0.1em; }
+.archive .archive__item-award {
+  display: inline-block;
+  padding: 0.18em 0.7em 0.2em;
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #8a6a12;
+  background: rgba(193, 154, 33, 0.13);
+  border: 1px solid rgba(193, 154, 33, 0.5);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.archive .archive__item-award::before {
+  content: "\2605";           /* star */
+  margin-right: 0.4em;
+  font-size: 0.95em;
+  opacity: 0.85;
+}
+/* keep it legible on dark themes */
+:root[data-theme="dark"] .archive .archive__item-award,
+html[data-theme="dark"] .archive .archive__item-award { color: #e0c260; }
+
+/* Inline publication status (e.g. "Conditionally accepted") */
+.archive .archive__item-status {
+  font-size: 0.94em;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* Experience timeline (home page) */
+.page__content .timeline {
+  margin: 1.1em 0 1.4em;
+  padding-left: 1.5em;
+  border-left: 2px solid var(--global-border-color);
+}
+.page__content .timeline-item {
+  position: relative;
+  padding-bottom: 1.5em;
+}
+.page__content .timeline-item:last-child { padding-bottom: 0.2em; }
+.page__content .timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.93em;
+  top: 0.35em;
+  width: 0.62em;
+  height: 0.62em;
+  border-radius: 50%;
+  background: var(--global-base-color);
+  box-shadow: 0 0 0 3px var(--global-bg-color);
+}
+.page__content .timeline-org {
+  font-size: 1.05em;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.page__content .timeline-role {
+  font-size: 0.9em;
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 0.1em;
+}
+.page__content .timeline-note {
+  margin: 0.35em 0 0;
+  font-size: 0.86em;
+  line-height: 1.55;
+  opacity: 0.82;
+  max-width: 46em;
+}
+
+/* year label beside a qualification */
+.page__content .timeline-year {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.92em;
+  opacity: 0.55;
+  margin-left: 0.45em;
+}
+
+/* Awards & Service - compact */
+.archive .compact h3 {
+  margin: 1em 0 0.25em;
+  font-size: 0.92em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  border-bottom: 0;
+}
+.archive .compact ul {
+  margin: 0 0 0.4em;
+  padding-left: 1.15em;
+}
+.archive .compact ul li {
+  margin: 0 0 0.12em;
+  font-size: 0.88em;
+  line-height: 1.45;
+}
+.archive .compact .award-item { margin: 0 0 0.7em; }
+.archive .compact .award-title {
+  font-size: 0.88em;
+  line-height: 1.4;
+  margin-top: 0.12em;
+}
+.archive .compact .award-venue {
+  font-size: 0.82em;
+  opacity: 0.72;
+  line-height: 1.4;
+}
+.archive .compact .archive__item-award { font-size: 0.64em; }
+
+/* Teaching - grouped and compact */
+.archive .compact .course-item { margin: 0 0 0.75em; }
+.archive .compact .course-title { font-weight: 700; font-size: 0.95em; line-height: 1.35; }
+.archive .compact .course-role  { font-size: 0.84em; opacity: 0.75; margin-top: 0.05em; }
+.archive .compact .course-note  { font-size: 0.84em; opacity: 0.72; margin-top: 0.1em; }
+
+/* Home page Research block - smaller than the rest of the page */
+.page__content .home-research p {
+  font-size: 0.86em;
+  line-height: 1.62;
+}
+
+/* ==========================================================================
+   MASTHEAD - flat ground, burnt-orange links, thin UT rule beneath
+   NOTE: the theme paints .masthead__menu-item with the page background; it
+   must be cleared or the items sit on their own opaque blocks.
+   ========================================================================== */
+.masthead {
+  background: var(--global-bg-color);
+  border-bottom: 3px solid var(--global-base-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+.masthead__inner-wrap { padding-top: 0.7em; padding-bottom: 0.7em; }
+
+.greedy-nav,
+.masthead__menu-item,
+.masthead__menu-item--lg { background: transparent !important; }
+
+.greedy-nav a,
+.greedy-nav a:visited,
+.masthead__menu-item a,
+.masthead__menu-item.selected a {
+  color: var(--global-base-color) !important;
+  font-weight: 600;
+}
+.masthead__menu-item--lg a { font-weight: 700 !important; }
+
+.greedy-nav a:hover,
+.masthead__menu-item.selected a:hover { color: var(--global-link-color-hover) !important; }
+
+/* active tab: solid orange underline */
+.greedy-nav .visible-links a::before { background: var(--global-base-color); height: 2px; }
+.masthead__menu-item.selected a { border-bottom: 0 !important; }
+
+.greedy-nav button { background: transparent; }
+.greedy-nav .hidden-links { background: var(--global-bg-color); border: 1px solid var(--global-border-color); }
+.greedy-nav .hidden-links a { color: var(--global-base-color) !important; }
+.greedy-nav .hidden-links a:hover { background: rgba(191, 87, 0, 0.08); }
+
+/* ==========================================================================
+   AVATAR - rounded rectangle so a wider, less tightly cropped photo fits
+   ========================================================================== */
+.author__avatar img {
+  border-radius: 16px !important;
+  max-width: 240px !important;
+  width: 100%;
+}
+@include breakpoint($large) {
+  .author__avatar { width: 240px; }
+}
+
+/* Conferences - plain list */
+.archive .compact .talk-item {
+  margin: 0 0 0.8em;
+  padding-bottom: 0.8em;
+  border-bottom: 1px solid var(--global-border-color);
+}
+.archive .compact .talk-item:last-child { border-bottom: 0; }
+.archive .compact .talk-title { font-weight: 700; font-size: 0.95em; line-height: 1.35; }
+.archive .compact .talk-meta  { font-size: 0.84em; opacity: 0.7; margin-top: 0.12em; }
+.archive .compact .talk-year  { margin-right: 0.15em; }
+.archive .compact .talk-venue { font-weight: 400; }
+
+
+/* Paper titles read as text, not as links - orange only on hover */
+.archive .archive__item-title a,
+.archive .archive__item-title a:visited {
+  color: var(--global-text-color);
+}
+.archive .archive__item-title a:hover {
+  color: var(--global-link-color-hover);
+  text-decoration: underline;
+}

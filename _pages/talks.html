@@ -1,0 +1,22 @@
+---
+layout: archive
+title: "Conferences and Presentations"
+permalink: /conferences/
+redirect_from:
+  - /talks/
+  - /talks.html
+author_profile: true
+---
+
+<div class="compact">
+{% for post in site.talks reversed %}
+  <div class="talk-item">
+    <div class="talk-title">{{ post.title }}</div>
+    <div class="talk-meta">
+      <span class="talk-year">{{ post.date | date: "%Y" }}</span>
+      <span class="talk-venue">{{ post.venue }}</span>{% if post.location != blank %}<span class="talk-where"> &middot; {{ post.location }}</span>{% endif %}
+      <span class="talk-where"> &middot; {{ post.type }}</span>
+    </div>
+  </div>
+{% endfor %}
+</div>

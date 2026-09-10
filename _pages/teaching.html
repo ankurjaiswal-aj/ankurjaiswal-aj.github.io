@@ -1,0 +1,21 @@
+---
+layout: archive
+title: "Teaching"
+permalink: /teaching/
+author_profile: true
+---
+
+<div class="compact">
+{% assign schools = "The University of Texas at Austin,Indian School of Business" | split: "," %}
+{% for school in schools %}
+  <h2>{{ school }}</h2>
+  {% for post in site.teaching reversed %}
+    {% if post.school != school %}{% continue %}{% endif %}
+    <div class="course-item">
+      <div class="course-title">{{ post.title }}</div>
+      <div class="course-role">{{ post.role }}</div>
+      <div class="course-note">{{ post.content | strip_html | strip }}</div>
+    </div>
+  {% endfor %}
+{% endfor %}
+</div>

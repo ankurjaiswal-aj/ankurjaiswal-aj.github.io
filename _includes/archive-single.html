@@ -1,0 +1,88 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+{% assign unpublished = "workingpapers,readytosubmit,workinprogress" | split: "," %}
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+          {% endif %}
+          alt="">
+      </div>
+    {% endif %}
+
+    {% comment %}Research entries and talks are plain text - no link.
+       Published work keeps its link to the publisher record.{% endcomment %}
+    {% assign plain_title = false %}
+    {% if post.collection == 'talks' %}{% assign plain_title = true %}{% endif %}
+    {% if unpublished contains post.category %}{% assign plain_title = true %}{% endif %}
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if plain_title %}
+        {{ title }}
+      {% elsif post.link %}
+        <a href="{{ post.link }}" target="_blank" rel="noopener">{{ title }}</a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h2>
+    
+    {% if post.authors %}
+      <p class="archive__item-authors">{{ post.authors }}</p>
+    {% endif %}
+
+    {% if post.read_time %}
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+
+        {% if post.collection == 'teaching' %}
+          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'publications' %}
+          {% assign unpublished = "workingpapers,readytosubmit,workinprogress" | split: "," %}
+          {% if unpublished contains post.category %}
+            {% if post.venue != blank %}<p class="archive__item-venue">{{ post.venue }}</p>{% endif %}
+          {% else %}
+            <p class="archive__item-venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% if post.status %}<span class="archive__item-status"> &middot; {{ post.status }}</span>{% endif %}</p>
+          {% endif %}
+        {% elsif post.date %}
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+
+    {% if post.award %}
+      <p class="archive__item-awardline"><span class="archive__item-award">{{ post.award }}</span></p>
+    {% endif %}
+
+    {% comment %}On Research (unpublished categories) the body IS the abstract,
+       so Jekyll's auto-excerpt would print the same text twice - suppress it there
+       only. Published work keeps its status line.{% endcomment %}
+    {% if post.collection == 'publications' and unpublished contains post.category %}
+    {% elsif post.excerpt != blank and site.read_more != 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% elsif post.excerpt != blank and site.read_more == 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    {% endif %}
+
+    {% if unpublished contains post.category and post.content != blank %}
+      <div class="archive__item-abstract">
+        <span class="archive__item-abstract-label">Abstract</span>
+        <div class="archive__item-abstract-body">{{ post.content }}</div>
+      </div>
+    {% endif %}
+    
+  </article>
+</div>

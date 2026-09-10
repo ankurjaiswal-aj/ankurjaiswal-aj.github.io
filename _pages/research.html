@@ -1,0 +1,23 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign groups = "workingpapers,readytosubmit,workinprogress" | split: "," %}
+{% for g in groups %}
+  {% assign title_shown = false %}
+  {% for post in site.publications reversed %}
+    {% if post.category != g %}
+      {% continue %}
+    {% endif %}
+    {% unless title_shown %}
+      <h2>{{ site.publication_category[g].title }}</h2><hr />
+      {% assign title_shown = true %}
+    {% endunless %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
