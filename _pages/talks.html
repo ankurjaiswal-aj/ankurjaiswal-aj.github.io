@@ -12,11 +12,19 @@ author_profile: true
 {% for post in site.talks reversed %}
   <div class="talk-item">
     <div class="talk-title">{{ post.title }}</div>
-    <div class="talk-meta">
-      <span class="talk-year">{{ post.date | date: "%Y" }}</span>
-      <span class="talk-venue">{{ post.venue }}</span>{% if post.location != blank %}<span class="talk-where"> &middot; {{ post.location }}</span>{% endif %}
-      <span class="talk-where"> &middot; {{ post.type }}</span>
-    </div>
+    {% if post.venues %}
+      <div class="talk-meta">{{ post.intro }}</div>
+      <ul class="talk-venues">
+        {% for v in post.venues %}
+          <li><span class="talk-vyear">{{ v.year }}</span>{{ v.name }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <div class="talk-meta">
+        <span class="talk-year">{{ post.date | date: "%Y" }}</span>
+        <span class="talk-venue">{{ post.venue }}</span>{% if post.location != blank %}<span class="talk-where"> &middot; {{ post.location }}</span>{% endif %}
+      </div>
+    {% endif %}
   </div>
 {% endfor %}
 </div>

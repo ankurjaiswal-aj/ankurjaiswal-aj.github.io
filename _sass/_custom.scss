@@ -335,3 +335,19 @@ html[data-theme="dark"] .archive .archive__item-award { color: #e0c260; }
 }
 
 .archive .archive__item-award + .archive__item-award { margin-left: 0.4em; }
+
+/* Conferences - a single paper presented at several venues */
+.archive .compact .talk-venues {
+  margin: 0.25em 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+.archive .compact .talk-venues li {
+  font-size: 0.84em;
+  opacity: 0.72;
+  line-height: 1.45;
+  margin: 0 0 0.1em;
+  padding-left: 3.1em;
+  text-indent: -3.1em;
+}
+.archive .compact .talk-vyear { display: inline-block; width: 3.1em; text-indent: 0; opacity: 0.85; }
