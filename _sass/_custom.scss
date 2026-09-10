@@ -352,3 +352,10 @@ html[data-theme="dark"] .archive .archive__item-award { color: #e0c260; }
   text-indent: -4em;
 }
 .archive .compact .talk-vyear { display: inline-block; width: 4em; padding-right: 0.7em; text-indent: 0; }
+
+/* parent body under an organisation name */
+.page__content .timeline-org-sub {
+  font-weight: 400;
+  font-size: 0.95em;
+  opacity: 0.85;
+}
