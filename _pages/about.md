@@ -20,7 +20,7 @@ My research examines how organizations create value from information systems as 
 
 **How deterministic and probabilistic systems differ in what they do to knowledge work.** Enterprise systems have long behaved the same way every time; generative AI does not. As the portfolio a knowledge worker carries grows more complicated, whether complexity emerges from that, and whether it then creates or destroys performance and value, is what I seek to understand and explain.
 
-**How innovation and reliability trade off against one another.** Knowledge work through digital mediums is continuously innovating: platforms evolve through a steady stream of feature releases into systems people already depend on. I study when the disruption this creates destroys value, and when it turns out to be serendipitous.
+**How innovation and reliability trade off against one another.** Knowledge work through digital mediums is continuously innovating: platforms evolve through a steady stream of feature releases into systems people already depend on. I study when the IT failures this produces destroy value, and when they turn out to be serendipitous.
 
 **How work environments should be designed for agentic workflows.** Where knowledge work is delegated to agentic AI but not accountability, the evidence a claim rests on is easily lost. I contributed to the design of an IT artifact that keeps that record durable and inspectable, and to the design framework behind it.
 
