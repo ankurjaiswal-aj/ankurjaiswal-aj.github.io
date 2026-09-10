@@ -7,7 +7,7 @@ venue: "The University of Texas at Austin, McCombs School of Business"
 date: 2023-01-01
 location: "Austin, Texas"
 school: "The University of Texas at Austin"
-role: "Teaching Assistant &middot; Spring 2023, 2024, 2025, 2026"
+role: "Teaching Assistant &middot; Spring 2023, 2024, 2025"
 ---
 
 Enrollment of approximately 200 students.

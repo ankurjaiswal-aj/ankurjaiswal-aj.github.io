@@ -1,7 +1,7 @@
 ---
-title: "Strategic Information Technology Management"
+title: "MIS 375: Strategic Information Technology Management"
 collection: teaching
-type: "Graduate course"
+type: "Undergraduate course"
 permalink: /teaching/strategic-it-management
 venue: "The University of Texas at Austin, McCombs School of Business"
 school: "The University of Texas at Austin"
