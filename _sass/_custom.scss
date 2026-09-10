@@ -84,8 +84,9 @@ html[data-theme="dark"] {
 .archive .archive__item-title {
   margin: 0 0 0.15em !important;
   padding-bottom: 0 !important;
-  font-size: 1em !important;
-  line-height: 1.35 !important;
+  font-size: 0.94em !important;
+  font-weight: 700 !important;
+  line-height: 1.4 !important;
   border-bottom: 0 !important;
   text-transform: none !important;
   letter-spacing: normal !important;
@@ -93,24 +94,24 @@ html[data-theme="dark"] {
 }
 
 .archive .archive__item-venue {
-  margin: 0.1em 0;
-  font-size: 0.88em;
-  opacity: 0.85;
+  margin: 0.05em 0;
+  font-size: 0.94em;
+  opacity: 0.72;
 }
 
 .archive .archive__item-excerpt {
-  margin: 0.2em 0 0;
-  font-size: 0.87em;
-  opacity: 0.8;
+  margin: 0.15em 0 0;
+  font-size: 0.94em;
+  opacity: 0.72;
 }
 .archive .archive__item-excerpt p { margin: 0; }
 
 /* Authors line */
 .archive .archive__item-authors {
-  margin: 0.1em 0 0.15em;
-  font-size: 0.88em;
+  margin: 0.1em 0 0.05em;
+  font-size: 0.94em;
   font-style: italic;
-  opacity: 0.9;
+  opacity: 0.72;
 }
 
 /* Abstract - always visible, small */
