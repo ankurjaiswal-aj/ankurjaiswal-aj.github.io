@@ -5,7 +5,6 @@ type: "Conference presentation"
 permalink: /talks/wage-inequality-presentations
 date: 2018-01-01
 venue: ""
-intro: "Presented at four venues"
 venues:
   - year: "2018"
     name: "54th Annual Conference, The Indian Econometric Society, Katra"

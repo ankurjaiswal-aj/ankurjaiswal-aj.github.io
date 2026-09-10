@@ -13,7 +13,6 @@ author_profile: true
   <div class="talk-item">
     <div class="talk-title">{{ post.title }}</div>
     {% if post.venues %}
-      <div class="talk-meta">{{ post.intro }}</div>
       <ul class="talk-venues">
         {% for v in post.venues %}
           <li><span class="talk-vyear">{{ v.year }}</span>{{ v.name }}</li>
