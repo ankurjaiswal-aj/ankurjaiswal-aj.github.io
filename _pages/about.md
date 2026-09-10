@@ -47,7 +47,7 @@ Generative AI and knowledge work; business value of IT; continuous feature innov
   <div class="timeline-item">
     <div class="timeline-org">Research and Information System for Developing Countries, Ministry of External Affairs, Government of India</div>
     <div class="timeline-role">Research Assistant</div>
-    <p class="timeline-note">Policy research with nationwide primary fieldwork across an export value chain. Contributed to studies for the Ministry of Commerce and the Ministry of AYUSH, and to a NITI Aayog white paper on the UN Sustainable Development Goals and the National Blue Economy Policy.</p>
+    <p class="timeline-note">Policy research with nationwide primary fieldwork across an export value chain. Contributed to studies for the Ministry of Commerce and the Ministry of AYUSH, and to NITI Aayog white papers on the UN Sustainable Development Goals and the National Blue Economy Policy.</p>
   </div>
 
   <div class="timeline-item">
