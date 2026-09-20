@@ -44,7 +44,7 @@ Generative AI and knowledge work; Complexity science; business value of AI; cont
   <div class="timeline-item">
     <div class="timeline-org">Indian School of Business</div>
     <div class="timeline-role">Research Associate, Information Systems</div>
-    <p class="timeline-note">Empirical analysis across projects in the Information Systems group, from data construction through writing and reviewer response. Contributed to work published in <em>Information Systems Research</em> and the <em>Journal of Management Information Systems</em>.</p>
+    <p class="timeline-note">Empirical analysis, data construction and cleaning across projects published in <em>MIS Quarterly</em>, <em>Information Systems Research</em> and the <em>Journal of Management Information Systems</em>. Writing assistance on empirical sections and drafting of reviewer responses. Acknowledged in the JMIS article.</p>
   </div>
 
   <div class="timeline-item">
@@ -56,7 +56,7 @@ Generative AI and knowledge work; Complexity science; business value of AI; cont
   <div class="timeline-item">
     <div class="timeline-org">Indian Institute of Management Calcutta</div>
     <div class="timeline-role">Research Assistant, Management Strategy</div>
-    <p class="timeline-note">Empirical work across strategy, corporate governance and international business projects. Contributed to work published in <em>Organization Science</em>, the <em>Journal of International Business Studies</em>, and the <em>Journal of Business Research</em>.</p>
+    <p class="timeline-note">Empirical analysis, data collection, construction and cleaning across strategy, corporate governance and international business projects published in <em>Organization Science</em>, the <em>Journal of International Business Studies</em> and the <em>Journal of Business Research</em>. Worked through referee reports and ran the revised analyses.</p>
   </div>
 
 </div>
