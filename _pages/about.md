@@ -29,7 +29,7 @@ My research examines how information systems shape the work of knowledge workers
 
 **How work environments should be designed for agentic workflows.** Design science treats the work environment as the object to be built and evaluated. Knowledge workers delegate search, reading and composition to agentic AI, and the passage a claim rests on sits inside a session that closes. The assumption I question is that evidentiary standing is settled at composition. I contributed to a framework and a system for durable provenance, and I propose that a lasting address for each passage makes verification affordable, curbs sycophancy, and lets delegated knowledge work create value.
 
-I work with proprietary system and digital trace data, clickstream and real user monitoring records, and quasi-experimental designs. I established the industry relationship behind this work and continue to maintain it directly: a partnership with a U.S. InsurTech SaaS platform that supports my current research and the work I plan next. I see building and sustaining partnerships of this kind as part of the research itself.
+I work with proprietary system and digital trace data, clickstream and real user monitoring records, and quasi-experimental designs. I established the industry relationship behind this work and continue to maintain it directly: a partnership with a U.S. InsurTech SaaS platform that supports my current research and the work I plan next. I also work with the co-founders of an AI startup on the design of agentic work environments. I see building and sustaining partnerships of this kind as part of the research itself.
 
 </div>
 
