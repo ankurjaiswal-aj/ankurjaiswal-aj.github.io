@@ -21,7 +21,7 @@ drop the file into files/ and uncomment the line below, matching the filename.
 
 <div class="home-research" markdown="1">
 
-My research examines how organizations create value from information systems as knowledge work grows more complicated and less predictable. Three questions organize it:
+My research examines how information systems shape the work of knowledge workers, and thereby the value organizations create, as that work grows more complicated, less predictable, and increasingly delegated to generative and agentic AI. Three questions organize it:
 
 **How deterministic and probabilistic systems differ in what they do to knowledge work.** Drawing on complexity science, I separate complicatedness, the interconnected components a worker carries, from the complexity that can emerge among them. The assumption I question is that value comes from imposing structure, since complicatedness brings valuable variety as well as demands, and requisite variety holds that varied work calls for varied responses. I ask what imposed structure does for a worker carrying a complicated portfolio, and what generative AI does in its place.
 
