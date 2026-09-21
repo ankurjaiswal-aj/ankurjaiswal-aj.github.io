@@ -1,12 +1,12 @@
 ---
-title: "ProRead: A Design Framework and System for Durable Provenance in Agentic Knowledge Work"
+title: "ProRead: A Design Framework and System for Durable Provenance for Value Creation in Agentic Knowledge Work"
 collection: publications
 category: workingpapers
 permalink: /publication/proread-durable-provenance
 date: 2026-11-30
 venue: "Target: Information Systems Research"
 excerpt: ""
-citation: "Jaiswal, A., Kanodia, A., and Agrawal, K. &quot;ProRead: A Design Framework and System for Durable Provenance in Agentic Knowledge Work.&quot;"
+citation: "Jaiswal, A., Kanodia, A., and Agrawal, K. &quot;ProRead: A Design Framework and System for Durable Provenance for Value Creation in Agentic Knowledge Work.&quot;"
 authors: 'With <a href="https://kanodiaayush.github.io/" target="_blank" rel="noopener">Ayush Kanodia</a> and <a href="https://scholar.google.com/citations?user=LGQioIgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Keshav Agrawal</a>'
 ---
 

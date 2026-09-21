@@ -1,11 +1,11 @@
 ---
-title: "Managing Complexity and Creating Value: The Role of Deterministic and Probabilistic Systems"
+title: "Managing Complicatedness in Knowledge Work: How Deterministic and Probabilistic Information Systems Shape Performance"
 collection: publications
 category: workingpapers
 permalink: /publication/managing-complexity-creating-value
 date: 2026-12-02
 venue: "Target: Information Systems Research"
-citation: "Jaiswal, A. and Tanriverdi, H. &quot;Managing Complexity and Creating Value: The Role of Deterministic and Probabilistic Systems.&quot;"
+citation: "Jaiswal, A. and Tanriverdi, H. &quot;Managing Complicatedness in Knowledge Work: How Deterministic and Probabilistic Information Systems Shape Performance.&quot;"
 authors: 'With <a href="https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/huseyin-tanriverdi/" target="_blank" rel="noopener">Hüseyin Tanriverdi</a>'
 ---
 
