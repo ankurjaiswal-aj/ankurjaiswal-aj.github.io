@@ -23,7 +23,7 @@ drop the file into files/ and uncomment the line below, matching the filename.
 
 My research examines how organizations create value from information systems as knowledge work grows more complicated and less predictable. Three questions organize it:
 
-**How deterministic and probabilistic systems differ in what they do to knowledge work.** Enterprise systems have long behaved the same way every time; generative AI does not. As the portfolio a knowledge worker carries grows more complicated, whether complexity emerges from that, and whether it then creates or destroys performance and value, is what I seek to understand and explain.
+**How deterministic and probabilistic systems differ in what they do to knowledge work.** Drawing on complexity science, I separate complicatedness, the interconnected components a worker carries, from the complexity that can emerge among them. The assumption I question is that value comes from imposing structure, since complicatedness brings valuable variety as well as demands, and requisite variety holds that varied work calls for varied responses. I ask what imposed structure does for a worker carrying a complicated portfolio, and what generative AI does in its place.
 
 **How innovation and reliability trade off against one another.** Knowledge work through digital mediums is continuously innovating: platforms evolve through a steady stream of feature releases into systems people already depend on. I study when the IT failures this produces destroy value, and when they turn out to be serendipitous.
 
