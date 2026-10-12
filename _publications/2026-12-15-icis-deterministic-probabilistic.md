@@ -5,7 +5,6 @@ category: conferences
 permalink: /publication/icis-2026-deterministic-probabilistic
 date: 2026-12-15
 venue: "International Conference on Information Systems (ICIS), Lisbon, Portugal"
-status: "Conditionally accepted"
 excerpt: ""
 citation: "Jaiswal, A. and Tanriverdi, H. (2026). &quot;How Deterministic and Probabilistic Information Systems Shape Complicatedness, Complexity, and Performance in Knowledge Work.&quot; <i>ICIS 2026 Proceedings</i>, Lisbon, Portugal."
 authors: 'With <a href="https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/huseyin-tanriverdi/" target="_blank" rel="noopener">Hüseyin Tanriverdi</a>'

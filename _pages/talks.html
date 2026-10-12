@@ -21,7 +21,7 @@ author_profile: true
     {% else %}
       <div class="talk-meta">
         <span class="talk-year">{{ post.date | date: "%Y" }}</span>
-        <span class="talk-venue">{{ post.venue }}</span>{% if post.location != blank %}<span class="talk-where"> &middot; {{ post.location }}</span>{% endif %}{% if post.forthcoming %}<span class="talk-forthcoming"> &middot; Forthcoming</span>{% endif %}
+        <span class="talk-venue">{{ post.venue }}</span>{% if post.location != blank %}<span class="talk-where"> &middot; {{ post.location }}</span>{% endif %}{% if post.forthcoming %}<span class="talk-forthcoming"> (Forthcoming)</span>{% endif %}
       </div>
     {% endif %}
   </div>
