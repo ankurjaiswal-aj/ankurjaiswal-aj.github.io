@@ -10,6 +10,7 @@
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Ankur Jaiswal"
+masthead_title           : "About Me" # masthead link text only; site.title still drives the browser tab and search results
 title_separator          : "-"
 name                     : &name "Ankur Jaiswal"
 description              : &description "PhD Candidate in Information Systems, McCombs School of Business, The University of Texas at Austin. Research on generative AI, complexity, and the business value of IT."

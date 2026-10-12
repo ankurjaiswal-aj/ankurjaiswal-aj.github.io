@@ -35,7 +35,7 @@ I established the industry relationship behind this work and continue to maintai
 
 ## Research Interests
 
-Generative AI and knowledge work; Complexity science; business value of AI; continuous feature innovation; IT failure; Attention and Effort distortions from probabilistic systems; CRM.
+Generative AI; knowledge work; Complexity science; Business value of AI; Innovation; IT failure; Attention and Effort distortions from probabilistic systems; CRM.
 
 ## Before UT Austin
 
