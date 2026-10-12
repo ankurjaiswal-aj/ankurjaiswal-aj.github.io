@@ -372,3 +372,8 @@ img.icon-longhorn {
   display: inline;
   vertical-align: -0.2em;
 }
+
+/* "Forthcoming" marker on conference presentations, grey in both themes */
+.archive .compact .talk-forthcoming { color: #5b6470; }
+html[data-theme="dark"] .archive .compact .talk-forthcoming,
+:root[data-theme="dark"] .archive .compact .talk-forthcoming { color: #a8b0bb; }
