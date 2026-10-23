@@ -1,11 +1,11 @@
 ---
-title: "When IT Failure Creates Value: Recoverable Disruption in Continuous Feature Innovation"
+title: "How IT Failure Creates Value: Recoverable Disruption in Continuous Feature Innovation"
 collection: publications
 category: workingpapers
 permalink: /publication/when-it-failure-creates-value
 date: 2026-12-01
 venue: "Target: MIS Quarterly"
-citation: "Jaiswal, A. and Tanriverdi, H. &quot;When IT Failure Creates Value: Recoverable Disruption in Continuous Feature Innovation.&quot;"
+citation: "Jaiswal, A. and Tanriverdi, H. &quot;How IT Failure Creates Value: Recoverable Disruption in Continuous Feature Innovation.&quot;"
 authors: 'With <a href="https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/huseyin-tanriverdi/" target="_blank" rel="noopener">Hüseyin Tanriverdi</a>'
 ---
 
