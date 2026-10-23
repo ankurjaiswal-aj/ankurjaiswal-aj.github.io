@@ -1,5 +1,5 @@
 ---
-title: "When IT Failure Creates Value: Recoverable Disruption in Continuous Feature Innovation"
+title: "How IT Failure Creates Value: Recoverable Disruption in Continuous Feature Innovation"
 collection: talks
 type: "Conference presentation"
 permalink: /talks/2026-12-wits-lisbon
