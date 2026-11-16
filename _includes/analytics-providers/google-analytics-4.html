@@ -1,3 +1,19 @@
+<script>
+  /* Owner opt-out. Visiting any page with ?notrack=1 marks this browser so
+     Analytics ignores it from then on; ?notrack=0 undoes it. The mark lives
+     in this browser's storage only, so each device or browser needs it once. */
+  (function () {
+    try {
+      var q = new URLSearchParams(window.location.search);
+      if (q.has('notrack')) {
+        localStorage.setItem('ga_optout', q.get('notrack') === '0' ? '0' : '1');
+      }
+      if (localStorage.getItem('ga_optout') === '1') {
+        window['ga-disable-{{ site.analytics.google.tracking_id }}'] = true;
+      }
+    } catch (e) {}
+  })();
+</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id={{site.analytics.google.tracking_id}}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
