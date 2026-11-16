@@ -377,3 +377,6 @@ img.icon-longhorn {
 .archive .compact .talk-forthcoming { color: #5b6470; }
 html[data-theme="dark"] .archive .compact .talk-forthcoming,
 :root[data-theme="dark"] .archive .compact .talk-forthcoming { color: #a8b0bb; }
+
+/* Footer band hidden: its text was removed, and the MathJax script inside it still loads */
+.page__footer { display: none; }
